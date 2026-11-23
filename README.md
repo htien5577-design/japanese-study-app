@@ -1,29 +1,33 @@
 # Japanese Study App 日本語
 
-Ứng dụng web giúp ôn tiếng Nhật: học bảng chữ cái Hiragana/Katakana, bảng số đếm và luyện đề trắc nghiệm SWT301, JPD133. Thuần HTML/CSS/JavaScript, mở `index.html` bằng trình duyệt là chạy.
+🇬🇧 English | [🇻🇳 Tiếng Việt](README.vi.md)
 
-![Giao diện ứng dụng](assets/screenshot.png)
+A web app for studying Japanese: Hiragana/Katakana charts, a number-counting table, and multiple-choice practice banks for the SWT301 and JPD133 courses. Pure HTML/CSS/JavaScript, just open `index.html` in a browser.
 
-## Cấu trúc dự án
+![App screenshot](assets/screenshot.png)
+
+## Project structure
 
 ```
 japanese-study-app/
-├── index.html            # Khung trang
+├── index.html            # Page shell
 ├── assets/
-│   └── screenshot.png    # Ảnh giao diện
+│   └── screenshot.png    # App screenshot
 ├── css/
-│   └── style.css         # Giao diện
+│   └── style.css         # Styles
 ├── js/
-│   ├── kana.js           # Bảng chữ cái, thẻ ghi nhớ, kiểm tra
-│   ├── numbers.js        # Số đếm
-│   ├── ai.js             # AI gợi ý
-│   ├── bank.js           # Ngân hàng câu hỏi, tạo bài kiểm tra
-│   ├── translate.js      # Dịch khi bôi đen
-│   └── app.js            # Chuyển tab, khởi tạo
+│   ├── kana.js           # Kana charts, flashcards, kana quiz
+│   ├── numbers.js        # Number counting
+│   ├── ai.js             # AI hints
+│   ├── bank.js           # Question banks, custom test builder
+│   ├── translate.js      # Translate on text selection
+│   └── app.js            # Tab switching, startup
 ├── data/
-│   ├── swt301.json       # Câu hỏi SWT301
-│   ├── jpd133.json       # Câu hỏi JPD133
-│   └── *.js              # Sinh tự động từ json
-└── scripts/
-    └── build_data.py     # json -> js
+│   ├── swt301.json       # SWT301 questions
+│   ├── jpd133.json       # JPD133 questions
+│   └── *.js              # Auto-generated from JSON
+├── scripts/
+│   └── build_data.py     # JSON -> JS
+├── README.md             # English
+└── README.vi.md          # Tiếng Việt
 ```
